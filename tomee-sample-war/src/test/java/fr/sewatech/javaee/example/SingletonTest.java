@@ -42,7 +42,7 @@ public class SingletonTest {
                 .addAsLibraries(libJar)
                 .addAsModule(ejbJar)
                 .addAsModule(war)
-                .addAsManifestResource("application.xml");
+                .addAsManifestResource("application-with-ejb-jar.xml", "application.xml");
     }
 
     @Inject BeanManager beanManager;
